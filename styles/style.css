@@ -1,0 +1,147 @@
+:root {
+    --acent-color: #FF6336;
+
+    --btn-sm-width: 80px;
+    --btn-lg-width: 130px;
+    --btn-sm-heigh: 35px;
+    --btn-lg-heigh: 50px;
+
+    --font-xl: 60px;
+    --font-l: 45px;
+    --font-m: 20px;
+    --font-sm: 15px;
+
+    --firms-color: #FF9C7D;
+
+    --img-width: 625px;
+}
+
+body {
+    font-family: 'Roboto Light', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.header-link {
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+.header-btns {
+    margin-left: 300px;
+}
+.header-btn-accent {
+    width: var(--btn-sm-width);
+    height: var(--btn-sm-heigh);
+    background-color: var(--acent-color);
+    color: white;
+    border-color: var(--acent-color);
+}
+.header-btn {
+    width: var(--btn-sm-width);
+    height: var(--btn-sm-heigh);
+    background-color: transparent;
+    border-color: lightgray;
+}
+
+.main {
+    display: flex;
+    margin: 0 50px;
+    padding-bottom: 100px;
+}
+.main-h1 {
+    font-size: var(--font-xl);
+}
+.main-h3 {
+    font-size: var(--font-m);
+    width: 400px;
+}
+.h4 {
+    font-size: var(--font-sm);
+}
+.main-img {
+    width: 700px;
+}
+
+.main-btns {
+    margin-top: 40px;
+}
+.main-btn-accent {
+    width: var(--btn-lg-width);
+    height: var(--btn-lg-heigh);
+    background-color: var(--acent-color);
+    color: white;
+    border-color: var(--acent-color);
+}
+.main-btn {
+    width: var(--btn-lg-width);
+    height: var(--btn-lg-heigh);
+    background-color: transparent;
+    border-color: lightgray;
+}
+
+.firms {
+    background-color: var(--firms-color);
+    height: 400px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.firm {
+    font-size: var(--font-l);
+    font-weight: bold;
+    width: 750px;
+    text-align: center;
+    margin: auto;
+}
+.firms-label {
+    display: inline-flex;
+    gap: 50px;
+    margin: auto;
+}
+
+.links {
+    text-decoration: underline;
+}
+
+.infos-img {
+    width: var(--img-width);
+}
+.infos {
+    display: flex;
+}
+.info-text {
+    font-size: var(--font-l);
+    font-weight: bold;
+}
+.info {
+    width: 50%;
+}
+.info-wd {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 570px;
+}
+.btn-common {
+    width: var(--btn-sm-width);
+    border-color: transparent;
+    background-color: transparent;
+    font-weight: bold;
+}
+.all-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
