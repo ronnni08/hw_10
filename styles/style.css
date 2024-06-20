@@ -14,16 +14,27 @@
     --firms-color: #FF9C7D;
 
     --img-width: 625px;
+
+    --font-xl-992: 40px;
+    --font-l-992: 35px;
+    --font-m-992: 18px;
+
+    --font-l-768: 25px;
+    --font-sm-768: 5px;
 }
 
 body {
     font-family: 'Roboto Light', sans-serif;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .header {
     display: flex;
     align-items: center;
     margin: 0 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .header-link {
@@ -35,9 +46,7 @@ body {
     text-decoration: none;
     color: black;
 }
-.header-btns {
-    margin-left: 300px;
-}
+
 .header-btn-accent {
     width: var(--btn-sm-width);
     height: var(--btn-sm-heigh);
@@ -68,7 +77,8 @@ body {
     font-size: var(--font-sm);
 }
 .main-img {
-    width: 700px;
+    width: 500px;
+    margin-top: 30px;
 }
 
 .main-btns {
@@ -144,4 +154,102 @@ body {
     display: flex;
     flex-direction: column;
     gap: 150px;
+}
+
+@media (max-width: 1200px) {
+    body {
+        max-width: 992px;
+    }
+
+    h4 {
+        width: 300px;
+    }
+    .infos-img {
+        width: 500px;
+    }
+}
+@media (max-width: 992px) {
+    body {
+        max-width: 768px;
+    }
+
+    .header-link {
+        gap: 10px;
+        margin-left: 10px;
+    }
+    .main-h1 {
+        font-size: var(--font-xl-992);
+    }
+    .main-h3 {
+        font-size: var(--font-m-992);
+    }
+    .main-img {
+        width: 300px;
+    }
+
+    .main {
+        padding-bottom: 50px;
+    }
+
+    .firms {
+        display: flex;
+    }
+    .firms-label {
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .firm {
+        width: 500px;
+    }
+
+    .infos-img {
+        width: 380px;
+    }
+    .info-text {
+        font-size: var(--font-l-992);
+    }
+    .info-wd {
+        width: 300px;
+        height: auto;
+    }
+    .all-infos {
+        gap: 100px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        max-width: 576px;
+    }
+    .main-img {
+        width: 0;
+    }
+    .header-label {
+        width: 50px;
+    }
+
+    .firm {
+        font-size: var(--font-l-768);
+        width: 300px;
+    }
+
+    .info-text {
+        font-size: var(--font-l-768);
+    }
+    .infos-img {
+        width: 280px;
+    }
+    .info-wd {
+        width: 200px;
+    }
+    h4 {
+        font-size: var(--font-sm-768);
+        width: 200px;
+    }
+
+}
+@media (max-width: 576px) {
+    body {
+        max-width: 100%;
+    }
 }
